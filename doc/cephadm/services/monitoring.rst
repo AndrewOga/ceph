@@ -423,8 +423,8 @@ A custom certificate can be configured using the following commands:
 
 .. prompt:: bash #
 
-  ceph config-key set mgr/cephadm/grafana_key -i $PWD/key.pem
-  ceph config-key set mgr/cephadm/grafana_crt -i $PWD/certificate.pem
+  ceph config-key set mgr/cephadm/{HOST}/grafana_key -i $PWD/key.pem
+  ceph config-key set mgr/cephadm/{HOST}/grafana_crt -i $PWD/certificate.pem
 
 If you have already deployed Grafana, run ``reconfig`` on the service to
 update its configuration:
